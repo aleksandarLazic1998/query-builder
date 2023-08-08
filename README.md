@@ -21,3 +21,5 @@ const query = queryBuilder({
 console.log(query);
 // Output: https://www.some-website.com/some-path?page=1&search=John+Doe&per_page=15
 ```
+
+Contributions to this utility are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/aleksandarLazic1998/query-builder).
