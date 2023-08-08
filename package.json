@@ -1,0 +1,18 @@
+{
+  "name": "query-builder",
+  "version": "1.0.0",
+  "description": "The queryBuilder function is a utility designed to construct and format URL query strings in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "url builder",
+    "query maker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
