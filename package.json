@@ -2,8 +2,15 @@
   "name": "query-builder",
   "version": "1.0.0",
   "description": "The queryBuilder function is a utility designed to construct and format URL query strings in JavaScript.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "npx jest"
