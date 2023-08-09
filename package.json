@@ -6,7 +6,10 @@
   "main": "./lib/cjs/index.js",
   "type": "module",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "LICENSE",
+    "README.md",
+    "package.json"
   ],
   "scripts": {
     "clean": "rm -rf ./lib",
