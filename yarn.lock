@@ -2158,6 +2158,13 @@ pure-rand@^6.0.0:
   resolved "https://registry.yarnpkg.com/pure-rand/-/pure-rand-6.0.2.tgz#a9c2ddcae9b68d736a8163036f088a2781c8b306"
   integrity sha512-6Yg0ekpKICSjPswYOuC5sku/TSWaRYlA0qsXqJgM/d/4pLPHPuTxK7Nbf7jFKzAeedUhR8C7K9Uv63FBsSo8xQ==
 
+query-builder-al@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/query-builder-al/-/query-builder-al-1.0.2.tgz#621461a4daaa5dd58bf0dc338dc36f4b20b48471"
+  integrity sha512-psYezGzdXCIPyhX1v7IonjtS8hE428spPvAXrLFbKZpPmMveWhAOfPhyUQ/+y+eKHAhfO0xwzpap1j4oko8iyw==
+  dependencies:
+    typescript "^5.1.6"
+
 querystringify@^2.1.1:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"

@@ -1,18 +1,19 @@
 {
   "name": "query-builder-al",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The queryBuilder function is a utility designed to construct and format URL query strings in JavaScript.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./lib/cjs/types/index.d.ts",
+  "main": "./lib/cjs/index.js",
   "type": "module",
   "files": [
-    "dist",
-    "LICENSE",
-    "README.md",
-    "package.json"
+    "lib/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "clean": "rm -rf ./lib",
+    "build": "yarn run clean && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
+    "prepack": "yarn run build",
     "test": "npx jest"
   },
   "keywords": [
@@ -22,6 +23,7 @@
   "author": "Aleksandar Lazic",
   "license": "ISC",
   "dependencies": {
+    "query-builder-al": "^1.0.2",
     "typescript": "^5.1.6"
   },
   "devDependencies": {
@@ -30,5 +32,17 @@
     "jest-environment-jsdom": "^29.6.2",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/types/index.d.ts",
+        "default": "./lib/esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/cjs/types/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
   }
 }
