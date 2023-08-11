@@ -22,9 +22,9 @@ const query = queryBuilder({
 
 console.log(query);
 // Output: https://www.some-website.com/some-path?page=1&search=John+Doe&per_page=15
-```
 
-```bash
+---------------------------------------------
+
 const queryBuilder = require('query-builder-al');
 
 const query = queryBuilder({
@@ -34,9 +34,10 @@ const query = queryBuilder({
 
 console.log(query);
 // Output: https://www.some-website.com/some-path?page=1&search=John+Doe&per_page=15
-```
 
-```bash
+
+---------------------------------------------
+
 const queryBuilder = require('query-builder-al');
 
 

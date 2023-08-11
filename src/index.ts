@@ -28,7 +28,7 @@ interface IProps<T> {
 }
 
 export const queryBuilder = <T>({ baseQuery, queryObject }: IProps<T>) => {
-  const query = new URL(baseQuery, window.location.origin);
+  const query = new URL(baseQuery, 'http://www.example.com');
 
   if (queryObject) {
     Object.entries(queryObject).forEach(([key, value]) => {
@@ -39,7 +39,7 @@ export const queryBuilder = <T>({ baseQuery, queryObject }: IProps<T>) => {
 
   const decodedPathnameWithQueryParams = decodeURIComponent(query.toString());
 
-  return decodedPathnameWithQueryParams.replace(window.location.origin, '');
+  return decodedPathnameWithQueryParams.replace('http://www.example.com', '');
 };
 
 export default queryBuilder;
