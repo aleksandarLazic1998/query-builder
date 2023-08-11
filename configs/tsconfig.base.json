@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
-    "strict": true,
+    "target": "ES5",
+    "lib": ["ES6", "DOM"],
+    "downlevelIteration": true,
     "esModuleInterop": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "checkJs": true,

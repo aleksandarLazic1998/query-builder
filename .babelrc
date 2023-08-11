@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": "commonjs", // Transpile to CommonJS modules
+        "targets": "> 0.25%, not dead, IE 11" // Target old browsers
+      }
+    ]
+  ]
+}
