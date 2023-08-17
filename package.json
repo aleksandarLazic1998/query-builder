@@ -1,6 +1,6 @@
 {
   "name": "query-builder-al",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The queryBuilder function is a utility designed to construct and format URL query strings in JavaScript.",
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
@@ -28,7 +28,7 @@
     "esm",
     "cjs"
   ],
-  "repository": "git@github.com:aleksandarLazic1998/findValueOfTheKey.git",
+  "repository": "git@github.com:aleksandarLazic1998/query-builder.git",
   "author": "aleksandarLazic1998 <aleksandar.lazic.p@gmail.com>",
   "license": "MIT",
   "dependencies": {
